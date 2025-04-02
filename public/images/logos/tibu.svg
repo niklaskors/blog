@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="31px" viewBox="0 0 33 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Portfolio-website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Niklaskors.com" transform="translate(-99.000000, -1514.000000)">
+            <g id="Group" transform="translate(99.000000, 1514.000000)">
+                <rect id="Rectangle" x="0" y="0" width="33" height="31"></rect>
+                <g transform="translate(3.000000, 6.000000)" fill="#906BFF" fill-rule="nonzero" id="Path">
+                    <path d="M17,4.17656 C17,1.87 15.13,0 12.82344,0 L4.17656001,0 C1.87,0 0,1.87 0,4.17656 L0,12.82344 C0,15.13 1.87,17 4.17656001,17 L17,17 L17,4.17656 Z"></path>
+                </g>
+                <g transform="translate(26.000000, 21.000000) rotate(-180.000000) translate(-26.000000, -21.000000) translate(22.000000, 17.000000)" fill="#906BFF" fill-rule="nonzero" id="Path">
+                    <path d="M8,2.30968 C8,1.03408 6.96592002,0 5.69032001,0 L2.30968,0 C1.03408,0 0,1.03408 0,2.30968 L0,5.69032 C0,6.96592001 1.03408,8 2.30968,8 L8,8 L8,2.30968 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
