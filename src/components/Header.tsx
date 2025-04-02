@@ -11,8 +11,8 @@ export function Header() {
   const pathname = usePathname()
 
   const links = [
-    { name: 'Curriculum Vitae', link: '/curriculum-vitae' },
-    { name: 'Blog', link: '/blog' }
+    { name: 'Curriculum Vitae', link: '/curriculum-vitae/' },
+    { name: 'Blog', link: '/blog/' }
   ]
 
   const activeLinkClass = 'font-bold';
