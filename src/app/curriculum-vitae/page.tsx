@@ -90,7 +90,7 @@ export default async function Page() {
             <span className={`text-neutral-400 text-xs`}>
               Last updated at | <span className='font-bold'>April 2nd 2025</span>
             </span>
-            <p className='pt-4'>My name is Niklas Kors. I am a full stack software engineer with many years of experience working with AWS, Node.js, React & TypeScript related projects.
+            <p className='pt-4'>My name is Niklas Kors. I am a full-stack software engineer with many years of experience working with AWS, Node.js, React & TypeScript related projects.
               I have worked for a number of different companies and enjoyed working on several solo projects as well. At this time I am full-time available for freelance projects and I would be glad to be a part in solving new technical challenges.</p>
           </div>
 
@@ -113,7 +113,7 @@ export default async function Page() {
           <div className='border-neutral-100 border-b-20'>
             <pre className={`whitespace-pre-line block p-2 px-6 text-[12px] md:text-[13px] leading-6 md:leading-9`}>
               # TL;DR CV <br />
-              - <span className='text-xl'>🗓️</span> <span className='text-[#06accc]'>10+</span> years of Full-Stack software experience<br />
+              - <span className='text-xl'>🗓️</span> <span className='text-[#06accc]'>10+</span> years of full-Stack software experience<br />
               - <span className='text-xl'>⭐️</span> Worked with <span className='text-[#06accc]'>60+</span> clients<br />
               - <span className='text-xl'>👨‍💻</span> Enjoy working for startups<br />
               - <span className='text-xl'>🧙</span> Cloud infrastructure wizard. Terraform + AWS<br />
