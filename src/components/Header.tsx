@@ -43,7 +43,7 @@ export function Header() {
           flex 
           max-w-5xl
           `}>
-          <ul className={`flex flex-row gap-8`}>
+          <ul className={`flex flex-row gap-4 md:gap-4`}>
             {links.map((link) => {
               return (
                 <li key={link.name}>
@@ -58,22 +58,15 @@ export function Header() {
           </ul>
         </div>
 
-        <div className='absolute right-0 flex flex-row gap-2'>
+        <div className='xl:absolute right-0 flex-row gap-2 hidden md:flex pl-8'>
           <CustomLink href="https://linkedin.com/in/niklaskors" underline={false}>
             <Image src="/images/social/linkedin.svg" width={20} height={20} alt="github"></Image>
           </CustomLink>
           <CustomLink href="https://github.com/niklaskors" underline={false}>
             <Image src="/images/social/github.svg" width={20} height={20} alt="github"></Image>
           </CustomLink>
-
-
         </div>
-
       </div>
-
-
-
     </div>
-
   )
 }

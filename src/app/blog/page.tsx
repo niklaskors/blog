@@ -12,10 +12,8 @@ export default async function Page({ }) {
   const blogArticles = (await getBlogArticlesMetadata());
 
   return (
-    <section className='container mx-auto h-full max-w-5xl'>
+    <section className='container mx-auto h-full max-w-5xl px-4'>
       <div className={`h-full`}>
-
-
         <div className={`
           flex
           flex-col

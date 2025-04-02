@@ -77,12 +77,14 @@ const WorkExperienceBlock = ({ title, description, duration, imageLink }: WorkEx
 export default async function Page() {
   return (
     <div className={`leading-9`}>
-      <div className={`container mx-auto max-w-5xl`}>
+      <div className={`container mx-auto max-w-5xl px-4`}>
         <section className={`
         grid
-        grid-cols-[1fr_300px]
+        md:grid-cols-[1fr_300px]
         py-8 
-        gap-12`}>
+        gap-8
+        sm:gap-12
+      `}>
           <div>
             <h1 className='text-4xl font-bold'>Curriculum Vitae</h1>
             <span className={`text-neutral-400 text-xs`}>
@@ -93,8 +95,8 @@ export default async function Page() {
           </div>
 
           <div className='pr-8'>
-            <div className='relative'>
-              <div className='absolute top-0 left-0'>
+            <div className='relative flex justify-center'>
+              <div className='top-0 left-0 md:max-w-full max-w-[200px]  md:absolute'>
                 <Image
                   src="/images/portrait.jpeg"
                   width={427}
@@ -105,7 +107,7 @@ export default async function Page() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
 
         <section className={`bg-neutral-50 border-1 border-neutral-100`}>
           <div className='border-neutral-100 border-b-20'>
@@ -132,12 +134,12 @@ export default async function Page() {
           <div></div>
         </section>
 
-        <section className={`grid grid-cols-2 gap-12`}>
+        <section className={`grid md:grid-cols-2 md:gap-12`}>
           <div>
             <p>
               I have worked with a wide variety of technologies, and I am most comfortable with those highlighted with an underscore below.
             </p>
-            <div className='grid grid-cols-2 py-8'>
+            <div className='grid sm:grid-cols-2 py-8'>
               <div>
                 <span className='font-bold'>Infrastructure</span>
                 <ul className={`[&>li]:before:content-['-_']`}>
@@ -170,10 +172,10 @@ export default async function Page() {
             />
           </div>
         </section>
-      </div>
+      </div >
 
       <div className="bg-neutral-50">
-        <div className='container mx-auto max-w-5xl py-8'>
+        <div className='container mx-auto max-w-5xl py-8 px-4'>
           <section>
             <h2 className='text-2xl font-bold'>Work experience</h2>
             <span className='text-xl'>From startups to enterprise</span>
@@ -253,7 +255,7 @@ export default async function Page() {
       </div>
 
       <div className='container mx-auto max-w-5xl'>
-        <section className='py-8'>
+        <section className='py-8 px-4'>
           <h2 className='text-2xl font-bold'>Education</h2>
 
           <div className='flex flex-col gap-8 py-8'>
@@ -290,10 +292,10 @@ export default async function Page() {
         </section>
 
 
-        <section className=''>
+        <section className='px-4'>
           <h2 className='text-2xl font-bold'>Certifications</h2>
 
-          <div className='grid grid-cols-3 py-8'>
+          <div className='grid gap-8 md:gap-0 md:grid-cols-3 py-8'>
             <CertBlock
               title='VWO Wiskunde B'
               organization='University of Amsterdam'
@@ -315,8 +317,8 @@ export default async function Page() {
           </div>
         </section>
 
-        <section className='py-16 '>
-          <div className='grid grid-cols-[1fr_1px_1fr]'>
+        <section className='md:py-16 px-4'>
+          <div className='grid md:grid-cols-[1fr_1px_1fr]'>
             <div className='py-8'>
 
               <div>
@@ -342,12 +344,12 @@ export default async function Page() {
 
             </div>
             <div className='bg-gray-200 w-[1px] h-full'></div>
-            <div className='flex justify-center items-center'>
+            <div className='justify-center items-center hidden md:flex'>
               <span>Thank you for your time 👋</span>
             </div>
           </div>
         </section>
       </div>
-    </div>
+    </div >
   )
 }
