@@ -25,7 +25,7 @@ jobs:
       - name: Deploy
         uses: lbertenasco/s3-deploy@v1
         with:
-          folder: /
+          folder: out
           bucket: "niklaskors"
           dist-id: "E1YYN7LF9OYTQ1"
           invalidation: / *
