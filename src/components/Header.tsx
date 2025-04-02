@@ -16,7 +16,7 @@ export function Header() {
   ]
 
   const activeLinkClass = 'font-bold';
-  console.log(pathname)
+
   return (
     <div className={`
     flex

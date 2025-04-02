@@ -15,8 +15,6 @@ export async function getBlogArticlesMetadata(){
       const { default: Post, data } = await import(`@/blog/${blogArticleFile}`);
       const stats = await stat(`./blog/${blogArticleFile}`)
       
-      console.log(stats)
-
       if(!data?.metadata?.title || data?.private === false){
         continue;
       }

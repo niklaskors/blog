@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized:true,
   },
+  trailingSlash: true,
   redirects: async()=> {
     return [
       {
