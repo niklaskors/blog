@@ -49,7 +49,7 @@ const MobileMenu = ({ links }: { links: NavLink[] }) => {
                     {'>'}
                   </span>
                 </Link>
-                {i !== links.length - 1 && <hr className='w-full text-neutral-200' />}
+                {i !== links.length - 1 && <div className='w-full h-1 border-b-1 text-white border-neutral-200' />}
               </li>
             )
           })}
@@ -78,7 +78,7 @@ const MobileMenu = ({ links }: { links: NavLink[] }) => {
       `}>
           <Logo />
           <div className='flex ml-auto h-full py-4 hover:cursor-pointer' onClick={onOpen}>
-            <Bars3Icon className=''></Bars3Icon>
+            <Bars3Icon className='h-[25px] w-[25px]'></Bars3Icon>
           </div>
         </div>
       </div>
