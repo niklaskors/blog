@@ -5,7 +5,7 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
     flex
     flex-col
     w-full
-    px-4
+    px-6
     py-2
     prose
     prose-p:text-stone-900

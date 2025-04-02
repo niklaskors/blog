@@ -44,7 +44,7 @@ interface EducationBlockProps {
 const EducationBlock = ({ title, duration, description }: EducationBlockProps) => {
   return (
     <div className='flex flex-col'>
-      <span className='font-bold'>{title}</span>
+      <span className='font-bold leading-5 mb-2'>{title}</span>
       <span className='text-sm leading-4 italic text-neutral-500'>{duration}</span>
       <span className='text-sm pt-2'>{description}</span>
     </div>
@@ -66,7 +66,7 @@ const WorkExperienceBlock = ({ title, description, duration, imageLink }: WorkEx
         <Image src={imageLink} width={40} height={30} alt={title} className='max-h-20 drag-none select-none' style={{ objectFit: 'contain', maxHeight: '40px' }}></Image>
       </div>
       <div className='flex flex-col'>
-        <span className='font-bold'>{title}</span>
+        <span className='font-bold leading-5 mb-2'>{title}</span>
         <span className='text-sm leading-4 italic text-neutral-500'>{duration}</span>
         <span className='text-sm pt-2'>{description}</span>
       </div>
@@ -77,7 +77,7 @@ const WorkExperienceBlock = ({ title, description, duration, imageLink }: WorkEx
 export default async function Page() {
   return (
     <div className={`leading-9`}>
-      <div className={`container mx-auto max-w-5xl px-4`}>
+      <div className={`container mx-auto max-w-5xl px-6`}>
         <section className={`
         grid
         md:grid-cols-[1fr_300px]
@@ -111,7 +111,7 @@ export default async function Page() {
 
         <section className={`bg-neutral-50 border-1 border-neutral-100`}>
           <div className='border-neutral-100 border-b-20'>
-            <pre className={`whitespace-pre-line block p-2 px-4 text-[13px] leading-9`}>
+            <pre className={`whitespace-pre-line block p-2 px-6 text-[12px] md:text-[13px] leading-6 md:leading-9`}>
               # TL;DR CV <br />
               - <span className='text-xl'>🗓️</span> <span className='text-[#06accc]'>10+</span> years of Full-Stack software experience<br />
               - <span className='text-xl'>⭐️</span> Worked with <span className='text-[#06accc]'>60+</span> clients<br />
@@ -175,7 +175,7 @@ export default async function Page() {
       </div >
 
       <div className="bg-neutral-50">
-        <div className='container mx-auto max-w-5xl py-8 px-4'>
+        <div className='container mx-auto max-w-5xl py-8 px-6'>
           <section>
             <h2 className='text-2xl font-bold'>Work experience</h2>
             <span className='text-xl'>From startups to enterprise</span>
@@ -255,7 +255,7 @@ export default async function Page() {
       </div>
 
       <div className='container mx-auto max-w-5xl'>
-        <section className='py-8 px-4'>
+        <section className='py-8 px-6'>
           <h2 className='text-2xl font-bold'>Education</h2>
 
           <div className='flex flex-col gap-8 py-8'>
@@ -292,7 +292,7 @@ export default async function Page() {
         </section>
 
 
-        <section className='px-4'>
+        <section className='px-6'>
           <h2 className='text-2xl font-bold'>Certifications</h2>
 
           <div className='grid gap-8 md:gap-0 md:grid-cols-3 py-8'>
@@ -317,7 +317,7 @@ export default async function Page() {
           </div>
         </section>
 
-        <section className='md:py-16 px-4'>
+        <section className='md:py-16 px-6'>
           <div className='grid md:grid-cols-[1fr_1px_1fr]'>
             <div className='py-8'>
 
