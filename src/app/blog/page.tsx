@@ -29,11 +29,9 @@ export default async function Page({ }) {
               by others, you put more effort into the quality. Making it structurally sound and coherent.
             </p>
             <p>
-              So don't expect to find a coherent theme other than it being a random collection
-              of topics that interest me. Also, I consider some of the articles to be a continuous work in progress so I might
-              change or add sections over time. Some topics that I might write about are about: Psychology, Philosophy, Religion,
+              There is not a specific theme that I want to focus on however. Also, I consider some of the articles to be a continuous work in progress so I might
+              change or add sections over time. Some topics that I might write about are about: Psychology, Philosophy, Technology, Religion,
               Spirituality, Metaphysics.
-
             </p>
           </div>
 
