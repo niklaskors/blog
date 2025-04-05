@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PT_Serif } from "next/font/google";
 import "./globals.css";
 import { Page } from '../components/Page';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <head>
         <meta name="apple-mobile-web-app-title" content="Niklas Kors" />
       </head>
+      <GoogleAnalytics gaId="G-JV6SW3TFLV" />
       <body
         className={`
            ${ptSerif.variable}
