@@ -24,6 +24,7 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
     prose-blockquote:border-gray-300 
      prose-blockquote:font-light
      prose-blockquote:py-1
+     prose-blockquote:leading-9
     `}>
     {children}
   </div>
