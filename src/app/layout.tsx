@@ -36,7 +36,6 @@ export default function RootLayout({
             text-stone-900`}
       >
         <Suspense>
-
           <Page>
             {children}
           </Page>

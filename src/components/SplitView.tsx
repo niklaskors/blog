@@ -76,7 +76,7 @@ export function SplitView({ children }: PropsWithChildren<any>) {
                 allowTransparency
                 onLoad={() => setLoading(false)}
                 style={{ border: 'none', display: 'block', height: '100%', width: '100%', backgroundColor: 'transparent' }}
-                src={link + '?embed=true'}
+                src={link + '/?embed=true'}
               />
             )} {loading && (
               <div className="absolute inset-0 flex items-center justify-center bg-opacity-80 z-10">
