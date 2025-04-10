@@ -3,6 +3,7 @@ import { PT_Serif } from "next/font/google";
 import "./globals.css";
 import { Page } from '../components/Page';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { Suspense } from 'react';
 
 const ptSerif = PT_Serif({
   variable: "--font-pt-serif",
@@ -34,9 +35,13 @@ export default function RootLayout({
             leading-9
             text-stone-900`}
       >
-        <Page>
-          {children}
-        </Page>
+        <Suspense>
+
+          <Page>
+            {children}
+          </Page>
+        </Suspense>
+
       </body>
     </html>
   );
