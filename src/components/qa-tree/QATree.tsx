@@ -1,7 +1,9 @@
 'use client'
+import React from 'react';
 import { createContext, PropsWithChildren, useCallback, useContext, useMemo, useState } from 'react';
 
 export interface Tree {
+  id: number;
   question: string;
   answer?: string;
   tree: Tree[]
@@ -11,8 +13,12 @@ export interface TreeProps {
 
 }
 
-const TreeQAContext = createContext({
-  addQuestion: () => any;
+export const TreeQAContext = createContext<{
+  id: number;
+  addQuestion: (args: { question: string, answer?: string }) => void;
+}>({
+  id: 0,
+  addQuestion: () => { }
 });
 
 
@@ -23,24 +29,29 @@ export function useQATreeContext() {
   }
   return context;
 }
+export function Q(props: { value: string; children?: React.ReactNode }) {
+  return <>{props.children}</>;
+}
+
+export function A(props: { value: string }) {
+  return null;
+}
+
 
 
 export function QATree({ children }: PropsWithChildren<TreeProps>) {
-  const [tree, setTree] = useState<Tree[]>([]);
-
-
-  const addQuestion = useCallback(({ question, answer }: { question: string, answer?: string }) => {
-    const newTree = { question, answer, tree: [] };
-    setTree([...tree, newTree]);
-  }, [tree, setTree]);
-
   const value = useMemo(() => {
     return {
-      addQuestion
     }
-  }, [addQuestion])
+  }, [])
 
-  return (<TreeQAContext.Provider value={value}>
-    {children}
-  </TreeQAContext.Provider>)
+  return (
+    <TreeQAContext.Provider value={value as any}>
+      <div className='border-l-1 border-neutral-200 pl-4 p-2 pb-4 flex flex-col gap-2'>
+        {children}
+      </div>
+    </TreeQAContext.Provider>)
+
+
+
 }

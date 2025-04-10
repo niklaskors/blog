@@ -4,13 +4,15 @@ import { Metadata, ResolvingMetadata } from 'next';
 export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>
+  params: Promise<{ slug: string[] }>
 }) {
-  const { slug } = await params
-  const { default: Post } = await import(`@/blog/${slug}.mdx`)
+  const { slug } = await params;
+
+  console.log(slug)
+  const { default: Post } = await import(`@/blog/${slug.join('/')}.mdx`)
 
   return (
-    <section className='container mx-auto py-4 max-w-5xl'>
+    <section className='container mx-auto py-4 max-w-5xl px-6'>
       <Post />
     </section>
   )
@@ -48,7 +50,16 @@ export async function generateMetadata(
 export async function generateStaticParams() {
   const names = await getBlogArticlesFileList();
 
-  return names.map((n) => ({ slug: n.replace('.mdx', '') }));
+  return names.map((n) => {
+    if (n.includes('/')) {
+      const slugs = n.split('/');
+      return {
+        slug: slugs.map(s => s.replace('.mdx', ''))
+      }
+    }
+
+    return { slug: [n.replace('.mdx', '')] }
+  });
 }
 
 export const dynamicParams = false

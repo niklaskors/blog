@@ -1,19 +1,30 @@
 import { readdir, stat } from 'fs/promises';
 import { BlogMetadata } from '../types';
 import { DateTime } from 'luxon';
+import { join } from 'path';
 
-export async function getBlogArticlesFileList(){
-    return await readdir('./blog');
+export async function getBlogArticlesFileList(subdir = ''): Promise<string[]> {
+  const files: string[] = [];
+  const fileFromDir = await readdir(join('./blog', subdir), { withFileTypes: true });
+
+  for (const file of fileFromDir) {
+    if (file.isDirectory()) {
+      files.push(...(await getBlogArticlesFileList(join(subdir, file.name))));
+    } else {
+      files.push(join(subdir, file.name));
+    }
+  }
+
+  return files;
 }
 
-export async function getBlogArticlesMetadata(){
-    const blogArticleFiles = await getBlogArticlesFileList();
+export async function getBlogArticlesMetadata(subdir = ''){
+    const blogArticleFiles = await getBlogArticlesFileList(subdir);
 
     const blogArticles: {fileName: string; metadata: BlogMetadata}[] = [];
 
     for(const blogArticleFile of blogArticleFiles){
       const { default: Post, data } = await import(`@/blog/${blogArticleFile}`);
-      const stats = await stat(`./blog/${blogArticleFile}`)
       
       if(!data?.metadata?.title || data?.private === false){
         continue;

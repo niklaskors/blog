@@ -1,11 +1,12 @@
-import { Metadata } from 'next';
+'use client'
+import { SplitView } from '@/src/components/SplitView';
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
-  return <div className={`
+  return <SplitView>
+    <div className={`
     flex
     flex-col
     w-full
-    px-6
     py-2
     prose
     prose-p:text-stone-900
@@ -26,6 +27,6 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
      prose-blockquote:py-1
      prose-blockquote:leading-9
     `}>
-    {children}
-  </div>
-}    // dark:prose-headings:text-white
+      {children} </div>
+  </SplitView>
+}

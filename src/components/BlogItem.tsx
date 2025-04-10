@@ -27,7 +27,7 @@ export function BlogItem({ link, metadata }: BlogItemProps) {
       pr-6
       `}>
         <h2 className='text-2xl font-bold'>{metadata.title}</h2>
-        <span className={`text-neutral-500`}>
+        <span className={`text-neutral-500 leading-6`}>
           {metadata.description}
         </span>
 
