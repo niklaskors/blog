@@ -22,7 +22,7 @@ const CertBlock = ({ imageLink, title, organization, issuedAt, link }: CertBlock
           <Image src={imageLink} width={30} height={30} alt={title} className='drag-none select-none'></Image>
         </div>
         <div className='flex flex-col'>
-          <span className='font-bold leading-3'>{title}</span>
+          <span className='font-bold leading-5'>{title}</span>
           <span className='text-sm leading-7'>{organization}</span>
 
           <span className='text-sm text-neutral-500'>{issuedAt}</span>
