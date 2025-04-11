@@ -52,7 +52,7 @@ export function SplitView({ children }: PropsWithChildren<any>) {
         className={`${link &&
           'md:flex md:flex-row items-stretch justify-stretch w-full h-full overflow-hidden'} transition-all duration-200`}>
 
-        <div className="min-w-100 h-full overflow-auto">
+        <div className="md:min-w-100 h-full overflow-auto">
           {children}
         </div>
 

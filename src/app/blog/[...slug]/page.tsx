@@ -8,7 +8,6 @@ export default async function Page({
 }) {
   const { slug } = await params;
 
-  console.log(slug)
   const { default: Post } = await import(`@/blog/${slug.join('/')}.mdx`)
 
   return (
