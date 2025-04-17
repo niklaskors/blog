@@ -88,7 +88,7 @@ export default async function Page() {
           <div>
             <h1 className='text-4xl font-bold'>Curriculum Vitae</h1>
             <span className={`text-neutral-400 text-xs`}>
-              Last updated at | <span className='font-bold'>April 3rd 2025</span>
+              Last updated at | <span className='font-bold'>April 17th 2025</span>
             </span>
             <p className='pt-4'>My name is Niklas Kors. I am a full-stack software engineer with many years of experience working with AWS, Node.js, React & TypeScript related projects.
               I have worked for a number of different companies and enjoyed working on several solo projects as well.
