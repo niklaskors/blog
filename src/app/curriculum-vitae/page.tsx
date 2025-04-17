@@ -146,6 +146,7 @@ export default async function Page() {
                 <ul className={`[&>li]:before:content-['-_']`}>
                   <li><u>AWS</u></li>
                   <li><u>Terraform</u></li>
+                  <li>Event Streams / Queues</li>
                   <li>Kubernetes</li>
                   <li>Google Cloud Platform</li>
                   <li>Debian GNU/linux servers</li>
@@ -155,7 +156,8 @@ export default async function Page() {
                 <span className='font-bold'>Applications</span>
                 <ul className={`[&>li]:before:content-['-_']`}>
                   <li><u>Node.js</u></li>
-                  <li><u>React SPA/Native apps</u></li>
+                  <li><u>React</u></li>
+                  <li>React Native</li>
                   <li>Angular 2.x+</li>
                   <li>PHP</li>
                   <li>C#</li>
