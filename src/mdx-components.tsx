@@ -4,6 +4,7 @@ import { Comment } from './components/Comment'
 import { QATree } from './components/qa-tree/QATree'
 import { Q } from './components/qa-tree/Question'
 import { A } from './components/qa-tree/Answer'
+import PDFClient from './components/PDFClient'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -13,7 +14,8 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     Comment,
     QATree,
     Q,
-    A
+    A,
+    PDF: PDFClient
   }
 }
 

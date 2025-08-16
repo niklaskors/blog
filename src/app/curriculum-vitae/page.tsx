@@ -205,10 +205,17 @@ export default async function Page() {
 
             <div className='pt-8 flex flex-col gap-8 pb-2'>
               <WorkExperienceBlock
-                title="Technical Lead - Biomod AI | Leiden"
-                description="Setup the Node.js backend, React frontend and infrastructure on AWS."
-                duration="Nov 2023 - Feb 2025"
-                imageLink="/images/logos/biomodai.svg"
+                title="Full-stack Developer - Citrus | Amsterdam"
+                description="Working as a software consultant"
+                duration="Jun 2025 - Present"
+                imageLink="/images/logos/citrus.svg"
+              />
+
+              <WorkExperienceBlock
+                title="Full-stack Developer - Essent | 's-Hertogenbosch"
+                description="Working with AWS, CDK, Node.js and TypeScript"
+                duration="Jun 2025 - Present"
+                imageLink="/images/logos/essent.svg"
               />
 
               <WorkExperienceBlock
@@ -264,7 +271,7 @@ export default async function Page() {
           <div className='flex flex-col gap-8 py-8'>
             <EducationBlock
               title='Bachelor - Psychology - University of Amsterdam | Amsterdam'
-              duration='Started in Sep 2022, expect to finish in 2025'
+              duration='2022 - 2025'
               description='Clinical Specialization'
             />
 
