@@ -204,9 +204,9 @@ export default async function Page() {
             </p>
 
             <div className='pt-8 flex flex-col gap-8 pb-2'>
-               <WorkExperienceBlock
+              <WorkExperienceBlock
                 title="Full-stack Developer - Citrus | Amsterdam"
-                description="Software consultant"
+                description="Working as a software consultant"
                 duration="Jun 2025 - Present"
                 imageLink="/images/logos/citrus.svg"
               />
