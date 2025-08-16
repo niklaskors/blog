@@ -26,7 +26,7 @@ export async function getBlogArticlesMetadata(subdir = ''){
     for(const blogArticleFile of blogArticleFiles){
       const { default: Post, data } = await import(`@/blog/${blogArticleFile}`);
       
-      if(!data?.metadata?.title || data?.private === false){
+      if(!data?.metadata?.title || data?.private === true){
         continue;
       }
 
