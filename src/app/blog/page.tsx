@@ -12,7 +12,7 @@ export default async function Page({ }) {
   const blogArticles = (await getBlogArticlesMetadata());
 
   return (
-    <section className='container mx-auto h-full max-w-5xl px-6'>
+    <section className='container mx-auto min-h-full max-w-5xl px-6 pb-32'>
       <div className={`h-full`}>
         <div className={`
           flex

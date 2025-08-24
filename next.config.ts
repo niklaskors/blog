@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 import createMDX from '@next/mdx'
+import mdxMermaid from 'mdx-mermaid'
+import {Mermaid} from 'mdx-mermaid/lib/Mermaid'
 
 const nextConfig: NextConfig = {
   output: 'export',
@@ -20,8 +22,13 @@ const nextConfig: NextConfig = {
 };
 
 const withMDX = createMDX({
-  // Add markdown plugins here, as desired
+  // extension: /\.(md|mdx)$/,
+  // extensions: ['md', 'mdx'],
+  options:{
+    remarkPlugins: [[mdxMermaid, {output: 'svg',}]],
+    
+  }
 })
- 
+
 // Merge MDX config with Next.js config
 export default withMDX(nextConfig)

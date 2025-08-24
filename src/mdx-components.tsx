@@ -5,6 +5,7 @@ import { QATree } from './components/qa-tree/QATree'
 import { Q } from './components/qa-tree/Question'
 import { A } from './components/qa-tree/Answer'
 import PDFClient from './components/PDFClient'
+import { Mermaid } from 'mdx-mermaid/lib/Mermaid'
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -15,7 +16,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     QATree,
     Q,
     A,
-    PDF: PDFClient
+    PDF: PDFClient,
+    mermaid: Mermaid,
+    Mermaid
   }
 }
 

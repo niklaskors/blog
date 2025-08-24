@@ -1,0 +1,42 @@
+import { Mermaid } from "mdx-mermaid/Mermaid";
+
+## The Web of Thinkers
+
+<Mermaid chart={`graph LR
+  subgraph Rational
+    direction LR
+    Nietzsche["Nietzsche"]
+    Schopenhauer["Schopenhauer"]
+    Heidegger["Heidegger"]
+    Kant["Kant"]
+    Jung["Jung"]
+    BernardoKastrup["Bernardo Kastrup"]
+
+    Schopenhauer --> Nietzsche
+    Heidegger --> Jung
+    Kant --> Jung
+    Jung --> BernardoKastrup
+    Schopenhauer --> BernardoKastrup
+
+end
+
+subgraph Intuitive direction LR RupertSpira["Rupert Spira"] Nishitani["Nishitani"] MeisterEckhart["Meister Eckhart"]
+
+    Nietzsche --> Nishitani
+    Heidegger --> Nishitani
+    MeisterEckhart --> Heidegger
+
+end
+
+%% Dashed bidirectional link to indicate equal thought stance BernardoKastrup -.-> RupertSpira RupertSpira -.->
+BernardoKastrup `} />
+
+export const data = {
+  private: true,
+  metadata: {
+    title: 'The Web of Thinkers',
+    description: 'A ever ongoing exploration of the thoughts of great thinkers',
+    createdAt: `16/08/2025`
+  }
+
+}
