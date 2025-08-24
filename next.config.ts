@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 import createMDX from '@next/mdx'
 import mdxMermaid from 'mdx-mermaid'
-import {Mermaid} from 'mdx-mermaid/lib/Mermaid'
 
 const nextConfig: NextConfig = {
   output: 'export',

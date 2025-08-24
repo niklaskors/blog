@@ -24,14 +24,10 @@ export default async function Page({ }) {
           <div className='py-4 w-full max-w-full'>
             <h1 className='font-bold text-4xl pb-6'>Blog</h1>
             <p>
-              I was inspired by an article that introduced the idea of writing a blog not necessarily for anyone else, but for yourself.
-              Unfortunately, I don't recall where I read about it but the general idea is that by writing pieces of text that might be read
-              by others, you put more effort into the quality. Making it structurally sound and coherent.
+              I was inspired by an article that suggested writing a blog not necessarily for others, but for yourself. I don't recall where I read it, but the idea is that by composing pieces that others might read you put more effort into their quality and, consequently, clarify your thoughts.
             </p>
             <p>
-              There is not a specific theme that I want to focus on however. Also, I consider some of the articles to be a continuous work in progress so I might
-              change or add sections over time. Some topics that I might write about are about: Psychology, Philosophy, Technology, Religion,
-              Spirituality, Metaphysics.
+              There is no single theme I intend to focus on. I consider many articles to be works in progress, so I may change or add sections over time. Possible topics include psychology, philosophy, technology, religion, spirituality, and metaphysics.
             </p>
           </div>
 
